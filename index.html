@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+    <script src="./public/index.bundle.min.js" defer type="module"></script>   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/styles/style.css">
+   
+</head>
+<body>
+    <header>
+        <h1>Kiwi's Jogo da velha</h1>
+        <section class="playersDivision">
+            <div id="playerX" class="players">
+                <label for="playerXName">Nome do Jogador X:</label>
+                <input value="a" id="playerXName" type="text" placeholder="Insira o nome do jogador X">
+            </div>
+            <div id="playerO"class="players">
+                <label for="playerOName">Nome do jogador O:</label>
+                <input value="b" id="playerOName" type="text" placeholder="Insira o nome do jogador O">
+            </div>
+        </section>
+        <button id="startGameBtn">Começar</button>
+    </header>
+    <main></main>
+</body>
+</html>
