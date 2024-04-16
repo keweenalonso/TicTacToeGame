@@ -1,0 +1,156 @@
+:root{
+    font-size: 10px;
+    --fun-bg: url(../../dist/imgs/park.avif);
+    --background-black: #000;
+    --background-light: #fff;
+    --color-pourple: #6039c9;
+    --color: rgb(70, 135, 255);
+    font-family: "JetBrains Mono", monospace;
+}
+
+body{
+    font-size: 1.6rem;
+    background: url(./imgs/rainbow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--color) ;
+    max-height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+label{
+    font-weight: bold;
+    display: block;
+    margin-top: 50%;
+    margin-bottom: .4rem;
+    font-size: clamp(1.3rem, 0.3493rem + 3.0423vw, 4rem);
+}
+h2{
+    font-size: clamp(1.3rem, 0.3493rem + 3.0423vw, 4rem);
+}
+
+input{
+    border: 1px solid black;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 30vw;
+}
+
+header {
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(70, 135, 255);
+    margin-top: 3rem;
+    font-size: clamp(1.9rem, 0.8085rem + 3.493vw, 5rem);
+}
+
+.players {
+    text-align: center;
+    margin-top: 3%;
+}
+
+button {
+    display: block;
+    margin: 4rem auto;
+    width: 15rem;
+    height: 5rem;
+    border-radius:5px;
+    border: none;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: var(--color-pourple);
+    color: #f0f0f0;
+    transition: bakcground-color, padding, width, 1s ease-in-out;
+}
+
+button:hover{
+    background-color: #291857;
+    padding: .8rem;
+    scale: 1.2;
+    transition: .5s all ease-in-out;
+}
+
+.playersDivision {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+td{
+    border: 2px solid black;
+    color: var(--color);
+    border-collapse: collapse;
+    width: 3rem;
+    height:3rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+td:hover{
+    background-color: #a0a0a056;
+    transition: all .2s ease-in-out;
+}
+tr:first-child td{
+    border-top: none;
+}
+tr:last-child td{
+    border-bottom: none;
+}
+tr td:first-child{
+    border-left: none;
+}
+tr td:last-child{
+    border-right: none;
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 1em;
+}
+
+main span{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+table{
+    background-color: transparent;
+    width: 30rem;
+    height: 30rem;
+    margin: 2em auto;
+    border-collapse: collapse;
+}
+
+.victory{
+    background-color: rgba(35, 221, 35, 0.651);
+}
+.victory:hover{
+    background-color: rgba(35, 221, 35, 0.651);
+}
+
+.playerO{
+    color: black;
+}
+
+@media screen and (min-width: 700px) {
+    body{
+        background:url(./imgs/backgroundChild.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    label{
+        margin: 0;
+    }
+}
